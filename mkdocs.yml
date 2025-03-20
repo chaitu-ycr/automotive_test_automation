@@ -3,7 +3,7 @@ site_url: https://chaitu-ycr.github.io/automotive_test_automation/
 site_description: automotive testing and automation notes
 site_author: chaitu-ycr
 
-repo_name: chaitu-ycr/automotive_test_automation
+repo_name: ""
 repo_url: https://github.com/chaitu-ycr/automotive_test_automation
 edit_uri: blob/main/docs/
 
@@ -92,3 +92,6 @@ theme:
   features:
     - toc.integrate
     - search
+
+extra_css:
+  - _assets/extra.css
