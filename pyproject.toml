@@ -1,7 +1,7 @@
 [project]
-name = "python_project_template"
+name = "automotive_test_automation"
 version = "0.0.1"
-description = "this is python project template description"
+description = "automotive testing and automation notes"
 license = { text = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,28 +13,15 @@ classifiers = [
     "Operating System :: Microsoft :: Windows"
 ]
 dependencies = [
-    "pylint",
-    "pytest",
-    "pytest-html",
-    "pytest-sugar",
-    "pytest-clarity",
-    "pytest-cov",
-    "pytest-mock",
-    "pytest-xdist",
-    "pytest-timeout",
-    "pytest-randomly",
-    "pytest-rerunfailures",
-    "pytest-watch",
-    "pytest-pdb",
     "mkdocs-material",
     "mkdocstrings-python",
     "mkdocs-include-markdown-plugin"
 ]
 
 [project.urls]
-homepage = "https://github.com/chaitu-ycr/python_project_template"
-repository = "https://github.com/chaitu-ycr/python_project_template"
-documentation = "https://chaitu-ycr.github.io/python_project_template/"
+homepage = "https://github.com/chaitu-ycr/automotive_test_automation"
+repository = "https://github.com/chaitu-ycr/automotive_test_automation"
+documentation = "https://chaitu-ycr.github.io/automotive_test_automation/"
 
 [build-system]
 requires = ["pdm-backend"]

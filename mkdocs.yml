@@ -1,15 +1,39 @@
-site_name: python_project_template
-site_url: https://chaitu-ycr.github.io/python_project_template/
-site_description: this is python project template description
+site_name: automotive_test_automation
+site_url: https://chaitu-ycr.github.io/automotive_test_automation/
+site_description: automotive testing and automation notes
 site_author: chaitu-ycr
 
-repo_name: chaitu-ycr/python_project_template
-repo_url: https://github.com/chaitu-ycr/python_project_template
+repo_name: chaitu-ycr/automotive_test_automation
+repo_url: https://github.com/chaitu-ycr/automotive_test_automation
 edit_uri: blob/main/docs/
 
 nav:
-  - Overview: index.md
-  - Reference: reference_manual.md
+  - Home: index.md
+  - Notebooks:
+    - Testing: Testing/readme.md
+    - Tools:
+      - CANoe: Tools/CANoe/readme.md
+      - CANalyzer: Tools/CANalyzer/readme.md
+    - Protocols:
+      - CAN: Protocols/CAN/readme.md
+      - UDS: Protocols/UDS/readme.md
+      - DoIP: Protocols/DoIP/readme.md
+    - Automation:
+      - CAPL: Automation/CAPL/readme.md
+      - Python: Automation/Python/readme.md
+      - Jenkins: Automation/Jenkins/readme.md
+      - Github_Actions: Automation/Github_Actions/readme.md
+    - Test Environments:
+      - HiL: Test_Env/HiL/readme.md
+      - SiL: Test_Env/SiL/readme.md
+      - Bench: Test_Env/Bench/readme.md
+    - Build Environments:
+      - CMake: Build_Env/CMake/readme.md
+    - Projects:
+      - ADAS: Projects/ADAS/readme.md
+      - BMS: Projects/BMS/readme.md
+      - IPC: Projects/IPC/readme.md
+      - ABS: Projects/ABS/readme.md
 
 plugins:
   - mkdocstrings:

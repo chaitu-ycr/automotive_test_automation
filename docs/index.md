@@ -1,3 +1,3 @@
-# python_project_template
+# automotive_test_automation
 
 {% include "../README.md" %}
