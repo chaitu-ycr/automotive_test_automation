@@ -16,6 +16,7 @@ uv sync --link-mode=copy
 if %ERRORLEVEL% NEQ 0 (GOTO ERROR)
 
 :START_MKDOCS_SERVER
+set JUPYTER_PLATFORM_DIRS=1
 mkdocs gh-deploy
 if %ERRORLEVEL% NEQ 0 (GOTO ERROR)
 
