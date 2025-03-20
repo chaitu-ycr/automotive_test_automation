@@ -14,26 +14,63 @@ nav:
     - Tools:
       - CANoe: Tools/CANoe/readme.md
       - CANalyzer: Tools/CANalyzer/readme.md
+      - Vector_VN_HW:
+        - Tools/Vector_VN_HW/vn_hw_io_piggy.md
     - Protocols:
       - CAN: Protocols/CAN/readme.md
       - UDS: Protocols/UDS/readme.md
       - DoIP: Protocols/DoIP/readme.md
     - Automation:
       - CAPL: Automation/CAPL/readme.md
-      - Python: Automation/Python/readme.md
-      - Jenkins: Automation/Jenkins/readme.md
-      - Github_Actions: Automation/Github_Actions/readme.md
+      - Python:
+        - Automation/Python/readme.md
+        - Basics:
+          - Automation/Python/Basics/000_introduction.ipynb
+          - Automation/Python/Basics/001_if_elif_else.ipynb
+          - Automation/Python/Basics/002_match_case.ipynb
+          - Automation/Python/Basics/003_loops.ipynb
+          - Automation/Python/Basics/004_string.ipynb
+          - Automation/Python/Basics/005_list.ipynb
+          - Automation/Python/Basics/006_tuple.ipynb
+          - Automation/Python/Basics/007_set.ipynb
+          - Automation/Python/Basics/008_dictionary.ipynb
+          - Automation/Python/Basics/009_array.ipynb
+          - Automation/Python/Basics/010_functions.ipynb
+          - Automation/Python/Basics/011_oop.ipynb
+          - Automation/Python/Basics/012_error_exception_handling.ipynb
+          - Automation/Python/Basics/013_iterator.ipynb
+          - Automation/Python/Basics/014_generator.ipynb
+          - Automation/Python/Basics/015_decorator.ipynb
+          - Automation/Python/Basics/016_documentation.ipynb
+        - Usecases:
+          - Automation/Python/Usecases/python_examples.ipynb
+          - Automation/Python/Usecases/pandas.ipynb
+          - Automation/Python/Usecases/cantools.ipynb
+        - QA:
+          - Basics: Automation/Python/QA/python_basics_questions.ipynb
+        - Cheatsheets:
+          - Basics: Automation/Python/Cheatsheets/python_basics_cheatsheet.pdf
     - Test Environments:
       - HiL: Test_Env/HiL/readme.md
       - SiL: Test_Env/SiL/readme.md
       - Bench: Test_Env/Bench/readme.md
-    - Build Environments:
-      - CMake: Build_Env/CMake/readme.md
     - Projects:
       - ADAS: Projects/ADAS/readme.md
       - BMS: Projects/BMS/readme.md
       - IPC: Projects/IPC/readme.md
       - ABS: Projects/ABS/readme.md
+    - Miscellaneous:
+      - YAML:
+        - Miscellaneous/YAML/readme.md
+        - Miscellaneous/YAML/scalars.ipynb
+        - Miscellaneous/YAML/sequences.ipynb
+        - Miscellaneous/YAML/mappings.ipynb
+        - Miscellaneous/YAML/syntax_and_structure.ipynb
+        - Miscellaneous/YAML/miscellaneous.ipynb
+      - GIT: Miscellaneous/GIT/readme.md
+      - Github_Actions: Miscellaneous/Github_Actions/readme.md
+      - Jenkins: Miscellaneous/Jenkins/readme.md
+      - CMake: Miscellaneous/CMake/readme.md
 
 plugins:
   - mkdocstrings:
@@ -46,6 +83,8 @@ plugins:
             show_docstring_modules: false
   - include-markdown:
       recursive: true
+  - mkdocs-jupyter:
+      include_requirejs: true
   - search
 
 theme:

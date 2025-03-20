@@ -13,7 +13,20 @@ classifiers = [
     "Operating System :: Microsoft :: Windows"
 ]
 dependencies = [
+    "ipykernel",
+    "cantools",
+    "pandas",
+    "opencv-python",
+    "pillow",
+    "plotly",
+    "dash-daq",
+    "customtkinter",
+    "pytest-html",
+    "pyyaml",
+    "ruamel-yaml",
+    "mkdocs-exclude",
     "mkdocs-material",
+    "mkdocs-jupyter",
     "mkdocstrings-python",
     "mkdocs-include-markdown-plugin"
 ]
