@@ -71,6 +71,7 @@ nav:
       - Github_Actions: Miscellaneous/Github_Actions/readme.md
       - Jenkins: Miscellaneous/Jenkins/readme.md
       - CMake: Miscellaneous/CMake/readme.md
+      - PlantUML: Miscellaneous/PlantUML/readme.md
 
 plugins:
   - mkdocstrings:
@@ -85,6 +86,12 @@ plugins:
       recursive: true
   - mkdocs-jupyter:
       include_requirejs: true
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: plantuml
+      theme:
+        light: material/indigo-light
+        enabled: false
   - search
 
 theme:

@@ -28,7 +28,8 @@ dependencies = [
     "mkdocs-material",
     "mkdocs-jupyter",
     "mkdocstrings-python",
-    "mkdocs-include-markdown-plugin"
+    "mkdocs-include-markdown-plugin",
+    "mkdocs-puml",
 ]
 
 [project.urls]
