@@ -141,7 +141,7 @@ nwdiag {
 ```plantuml
 @startmindmap
 * Identifier in a CAN Message
-** Standard Identifier (11 bits) 
+** Standard Identifier (11 bits)
 *** Used in standard CAN frames.
 *** Supports up to 2048 unique identifiers.
 ** Extended Identifier (29 bits)
@@ -838,3 +838,125 @@ nwdiag {
 ```
 
 ---
+
+- CAN high speed and low speed voltage levels for dominant and recessive states.
+
+```plantuml
+@startmindmap
+* CAN Voltage Levels
+** High-Speed CAN
+*** Dominant State
+**** Differential Voltage > 2V
+**** CAN_H ≈ 3.5V
+**** CAN_L ≈ 1.5V
+*** Recessive State
+**** Differential Voltage ≈ 0V
+**** CAN_H ≈ 2.5V
+**** CAN_L ≈ 2.5V
+** Low-Speed CAN
+*** Dominant State
+**** CAN_H: Higher Voltage
+**** CAN_L: Lower Voltage
+*** Recessive State
+**** Differential Voltage ≈ 0V
+**** CAN_H = CAN_L
+@endmindmap
+```
+
+---
+
+## CAN Errors
+
+### Error Frame
+
+![error_frames](error_frames.png)
+
+### Types of Errors
+
+#### CRC Error
+
+- CRC Error occurs when the calculated CRC does not match the received CRC.
+- Detected during data verification.
+- Indicates data corruption or transmission errors.
+- Frame is discarded or flagged for retransmission.
+- Importance: Critical for maintaining data integrity.
+- Helps in identifying and correcting transmission errors.
+
+![crc_error](crc_error.png)
+
+#### Acknowledgment Error
+
+- Acknowledgment Error occurs when a node does not receive an ACK bit after transmitting a message.
+- Detected by the sender when no ACK bit is received.
+- Indicates communication issues or node failure.
+- May lead to message loss or data corruption.
+- Importance: Ensures reliable communication between nodes.
+
+![ack_error](ack_error.png)
+
+#### Bit Error
+
+- Bit Error occurs when a transmitted bit is received with the wrong value.
+- Detected by comparing transmitted and received bits.
+- Indicates signal integrity issues or noise interference.
+- May lead to data corruption or transmission errors.
+- Importance: Ensures accurate data transmission.
+
+![bit_error](bit_error_1.png)
+![bit_error](bit_error_2.png)
+
+#### Stuff Error
+
+- Stuff Error occurs when bit stuffing rules are violated.
+- Detected during frame reception.
+- Indicates synchronization issues or data corruption.
+- May lead to frame errors or transmission failures.
+- Importance: Ensures data integrity and reliable communication.
+
+![stuff_error](stuff_error_1.png)
+![stuff_error](stuff_error_2.png)
+
+#### Form Error
+
+- Form Error occurs when the frame format is incorrect or invalid.
+- Detected during frame reception.
+- Indicates protocol violations or transmission errors.
+- May lead to frame rejection or data loss.
+- Importance: Ensures proper frame reception and processing.
+
+![form_error](form_error.png)
+
+### Fault Confinement and States
+
+- Fault Confinement is a mechanism to isolate faulty nodes and prevent network disruption.
+- Nodes use error flags and counters to detect and handle errors.
+- Implements error confinement to prevent faulty nodes from disrupting the network.
+- Importance: Ensures network reliability and fault tolerance.
+
+![error_states](error_states.png)
+
+- Error Active: Node is operational and participates in bus communication.
+- Error Passive: Node detects errors but does not actively transmit messages.
+- Bus Off: Node exceeds error limits and is unable to transmit or receive messages.
+- Recovery: Reset, retry, and error handling strategies to recover from bus off state.
+
+### Error Handling Rules
+
+- **Receive Error Counter Increments:**
+    - Increment by 1 for detected errors, except bit errors during active error flag or overload flag.
+    - Increment by 8 if a dominant bit is detected after sending an error flag.
+
+- **Transmit Error Counter Increments:**
+    - Increment by 8 when sending an error flag.
+    - Exceptions (no increment):
+        - Error-passive transmitter detects ACK error without dominant ACK and no dominant bit during passive error flag.
+        - Stuff error during arbitration with recessive stuff bit sent but monitored as dominant.
+    - Increment by 8 for bit errors while sending active error flag or overload flag.
+
+- **Dominant Bit Tolerance:**
+    - Tolerate up to 7 consecutive dominant bits after active error flag, passive error flag, or overload flag.
+    - Increment transmit and receive error counters by 8 after detecting 14 consecutive dominant bits (active error flag or overload flag) or 8 consecutive dominant bits (passive error flag), and after each additional 8 consecutive dominant bits.
+
+- **Error Counter Decrements:**
+    - Transmit error counter decrements by 1 after successful frame transmission (ACK received, no errors until EOF).
+    - Receive error counter decrements by 1 after successful frame reception (no errors up to ACK slot, ACK bit sent), if between 1 and 127. If 0, it stays at 0. If greater than 127, set to 119-127.
