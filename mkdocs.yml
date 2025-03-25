@@ -10,7 +10,9 @@ edit_uri: blob/main/docs/
 nav:
   - Home: index.md
   - Notebooks:
-    - Testing: Testing/readme.md
+    - Testing:
+      - Testing/readme.md
+      - ASPICE: Testing/ASPICE/readme.md
     - Tools:
       - CANoe: Tools/CANoe/readme.md
       - CANalyzer: Tools/CANalyzer/readme.md
@@ -43,9 +45,19 @@ nav:
           - Automation/Python/Basics/015_decorator.ipynb
           - Automation/Python/Basics/016_documentation.ipynb
         - Usecases:
-          - Automation/Python/Usecases/python_examples.ipynb
-          - Automation/Python/Usecases/pandas.ipynb
           - Automation/Python/Usecases/cantools.ipynb
+          - Automation/Python/Usecases/dash.ipynb
+          - Automation/Python/Usecases/multiprocessing.ipynb
+          - Automation/Python/Usecases/multithreading.ipynb
+          - Automation/Python/Usecases/opencv.ipynb
+          - Automation/Python/Usecases/pandas.ipynb
+          - Automation/Python/Usecases/pillow.ipynb
+          - Automation/Python/Usecases/poetry.ipynb
+          - Automation/Python/Usecases/pytest.ipynb
+          - Automation/Python/Usecases/regular_expressions.ipynb
+          - Automation/Python/Usecases/tkinter.ipynb
+          - Automation/Python/Usecases/programming_challenges.ipynb
+          - Automation/Python/Usecases/z_mixed_examples.ipynb
         - QA:
           - Basics: Automation/Python/QA/python_basics_questions.ipynb
         - Cheatsheets:

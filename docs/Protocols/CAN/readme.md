@@ -894,7 +894,7 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 
 ### Error Frame
 
-![error_frames](error_frames.png)
+![error_frames](data/error_frames.png)
 
 ### Types of Errors
 
@@ -907,7 +907,7 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - Importance: Critical for maintaining data integrity.
 - Helps in identifying and correcting transmission errors.
 
-![crc_error](crc_error.png)
+![crc_error](data/crc_error.png)
 
 #### Acknowledgment Error
 
@@ -917,7 +917,7 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - May lead to message loss or data corruption.
 - Importance: Ensures reliable communication between nodes.
 
-![ack_error](ack_error.png)
+![ack_error](data/ack_error.png)
 
 #### Bit Error
 
@@ -927,8 +927,8 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - May lead to data corruption or transmission errors.
 - Importance: Ensures accurate data transmission.
 
-![bit_error](bit_error_1.png)
-![bit_error](bit_error_2.png)
+![bit_error](data/bit_error_1.png)
+![bit_error](data/bit_error_2.png)
 
 #### Stuff Error
 
@@ -938,8 +938,8 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - May lead to frame errors or transmission failures.
 - Importance: Ensures data integrity and reliable communication.
 
-![stuff_error](stuff_error_1.png)
-![stuff_error](stuff_error_2.png)
+![stuff_error](data/stuff_error_1.png)
+![stuff_error](data/stuff_error_2.png)
 
 #### Form Error
 
@@ -949,7 +949,7 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - May lead to frame rejection or data loss.
 - Importance: Ensures proper frame reception and processing.
 
-![form_error](form_error.png)
+![form_error](data/form_error.png)
 
 ### Fault Confinement and States
 
@@ -958,7 +958,7 @@ In Controller Area Network (CAN) communication, the bit rate, or baud rate, dete
 - Implements error confinement to prevent faulty nodes from disrupting the network.
 - Importance: Ensures network reliability and fault tolerance.
 
-![error_states](error_states.png)
+![error_states](data/error_states.png)
 
 - Error Active: Node is operational and participates in bus communication.
 - Error Passive: Node detects errors but does not actively transmit messages.
