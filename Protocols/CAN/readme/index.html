@@ -49,7 +49,13 @@
               </ul>
               <p class="caption"><span class="caption-text">Notebooks</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../../../Testing/readme/">Testing</a>
+                  <li class="toctree-l1"><a class="reference internal" >Testing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Testing/readme/">Readme</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Testing/ASPICE/readme/">ASPICE</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >Tools</a>
     <ul>
@@ -409,7 +415,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Python</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Automation/Python/readme/">About Python</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Automation/Python/readme/">Python Introduction</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" >Basics</a>
     <ul>
@@ -451,11 +457,31 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" >Usecases</a>
     <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/python_examples/">list of python examples</a>
-                </li>
-                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/pandas/">All about Pandas</a>
-                </li>
                 <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/cantools/">cantools</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/dash/">What is Python Dash?</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/multiprocessing/">Multiprocessing</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/multithreading/">Multithreading</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/opencv/">Opencv</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/pandas/">Pandas</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/pillow/">Pillow</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/poetry/">Poetry</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/pytest/">Pytest</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/regular_expressions/">Regular expressions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/tkinter/">Tkinter</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/programming_challenges/">Python Programming Challenges</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../Automation/Python/Usecases/z_mixed_examples/">list of python examples</a>
                 </li>
     </ul>
                 </li>
@@ -1680,7 +1706,7 @@
 </ul>
 <h2 id="can-errors">CAN Errors</h2>
 <h3 id="error-frame_1">Error Frame</h3>
-<p><img alt="error_frames" src="../error_frames.png" /></p>
+<p><img alt="error_frames" src="../data/error_frames.png" /></p>
 <h3 id="types-of-errors">Types of Errors</h3>
 <h4 id="crc-error_1">CRC Error</h4>
 <ul>
@@ -1691,7 +1717,7 @@
 <li>Importance: Critical for maintaining data integrity.</li>
 <li>Helps in identifying and correcting transmission errors.</li>
 </ul>
-<p><img alt="crc_error" src="../crc_error.png" /></p>
+<p><img alt="crc_error" src="../data/crc_error.png" /></p>
 <h4 id="acknowledgment-error">Acknowledgment Error</h4>
 <ul>
 <li>Acknowledgment Error occurs when a node does not receive an ACK bit after transmitting a message.</li>
@@ -1700,7 +1726,7 @@
 <li>May lead to message loss or data corruption.</li>
 <li>Importance: Ensures reliable communication between nodes.</li>
 </ul>
-<p><img alt="ack_error" src="../ack_error.png" /></p>
+<p><img alt="ack_error" src="../data/ack_error.png" /></p>
 <h4 id="bit-error_1">Bit Error</h4>
 <ul>
 <li>Bit Error occurs when a transmitted bit is received with the wrong value.</li>
@@ -1709,8 +1735,8 @@
 <li>May lead to data corruption or transmission errors.</li>
 <li>Importance: Ensures accurate data transmission.</li>
 </ul>
-<p><img alt="bit_error" src="../bit_error_1.png" />
-<img alt="bit_error" src="../bit_error_2.png" /></p>
+<p><img alt="bit_error" src="../data/bit_error_1.png" />
+<img alt="bit_error" src="../data/bit_error_2.png" /></p>
 <h4 id="stuff-error_1">Stuff Error</h4>
 <ul>
 <li>Stuff Error occurs when bit stuffing rules are violated.</li>
@@ -1719,8 +1745,8 @@
 <li>May lead to frame errors or transmission failures.</li>
 <li>Importance: Ensures data integrity and reliable communication.</li>
 </ul>
-<p><img alt="stuff_error" src="../stuff_error_1.png" />
-<img alt="stuff_error" src="../stuff_error_2.png" /></p>
+<p><img alt="stuff_error" src="../data/stuff_error_1.png" />
+<img alt="stuff_error" src="../data/stuff_error_2.png" /></p>
 <h4 id="form-error">Form Error</h4>
 <ul>
 <li>Form Error occurs when the frame format is incorrect or invalid.</li>
@@ -1729,7 +1755,7 @@
 <li>May lead to frame rejection or data loss.</li>
 <li>Importance: Ensures proper frame reception and processing.</li>
 </ul>
-<p><img alt="form_error" src="../form_error.png" /></p>
+<p><img alt="form_error" src="../data/form_error.png" /></p>
 <h3 id="fault-confinement-and-states">Fault Confinement and States</h3>
 <ul>
 <li>Fault Confinement is a mechanism to isolate faulty nodes and prevent network disruption.</li>
@@ -1737,7 +1763,7 @@
 <li>Implements error confinement to prevent faulty nodes from disrupting the network.</li>
 <li>Importance: Ensures network reliability and fault tolerance.</li>
 </ul>
-<p><img alt="error_states" src="../error_states.png" /></p>
+<p><img alt="error_states" src="../data/error_states.png" /></p>
 <ul>
 <li>Error Active: Node is operational and participates in bus communication.</li>
 <li>Error Passive: Node detects errors but does not actively transmit messages.</li>
