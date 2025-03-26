@@ -11,8 +11,19 @@ nav:
   - Home: index.md
   - Notebooks:
     - Testing:
-      - Testing/readme.md
-      - ASPICE: Testing/ASPICE/readme.md
+      - Testing:
+        - Basics: Testing/readme.md
+        - References:
+          - ISTQB_CTFL_Syllabus_v4.0.1: https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf
+          - ISTQB-CT-AuT_Syllabus_v1.0_2018: https://www.istqb.org/wp-content/uploads/2024/11/ISTQB-CT-AuT_Syllabus_v1.0_2018.pdf
+      - ASPICE:
+        - Basics: Testing/ASPICE/readme.md
+        - References:
+          - Automotive-SPICE-PAM-v40: https://vda-qmc.de/wp-content/uploads/2023/12/Automotive-SPICE-PAM-v40.pdf
+          - Automotive_Spice_Pocket_Guide: https://www.ul.com/sites/default/files/2024-10/Automotive_Spice_Pocket_Guide.pdf
+      - SDLC:
+        - Basics:
+          - Testing/SDLC/readme.md
     - Tools:
       - CANoe: Tools/CANoe/readme.md
       - CANalyzer: Tools/CANalyzer/readme.md

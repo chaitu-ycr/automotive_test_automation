@@ -1,7 +1,7 @@
 **NOTE**: This notebook is based on the following two ISTQB documents. This notebook prepared while studying for certification. I recommend reading the documents from the ISTQB website for complete information.
 
-- https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf
-- https://www.istqb.org/wp-content/uploads/2024/11/ISTQB-CT-AuT_Syllabus_v1.0_2018.pdf
+- [ISTQB_CTFL_Syllabus_v4.0.1.pdf](https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf)
+- [ISTQB-CT-AuT_Syllabus_v1.0_2018.pdf](https://www.istqb.org/wp-content/uploads/2024/11/ISTQB-CT-AuT_Syllabus_v1.0_2018.pdf)
 
 ---
 
