@@ -99,7 +99,7 @@
     <ul>
                 <li class="toctree-l3"><a class="reference internal" >Basics</a>
     <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../SDLC/readme/">Readme</a>
+                <li class="toctree-l4"><a class="reference internal" href="../../SDLC/readme/">Software Development Life Cycle (SDLC)</a>
                 </li>
     </ul>
                 </li>
@@ -304,7 +304,7 @@
             <div class="section" itemprop="articleBody">
               
                 <p><strong>NOTE</strong>: All content here is AI generated and this notes prepared for study purpose. For detailed information visit <a href="https://vda-qmc.de/en/automotive-spice">automotive-spice 🔗</a>.</p>
-<p>My focus in this notebook is towards Testing Topics.</p>
+<p>My focus in this notebook is towards Testing Topics and used ASPICE 4.0 as reference.</p>
 <ul>
 <li><a href="https://vda-qmc.de/wp-content/uploads/2023/12/Automotive-SPICE-PAM-v40.pdf">ASPICE 4.0 Basics and Reference Manual 🔗</a></li>
 <li><a href="https://www.ul.com/sites/default/files/2024-10/Automotive_Spice_Pocket_Guide.pdf">ASPICE 4.0 Pocket Guide 🔗</a></li>
@@ -325,7 +325,21 @@
 <h2 id="pam-relationship">PAM relationship</h2>
 <p><img alt="PAM relationship" src="../data/PAM_relationship.png" /></p>
 <h2 id="process-reference-model-prm">Process Reference Model (PRM)</h2>
-<p><img alt="PRM" src="../data/PRM.png" /></p>
+<h3 id="prm-aspice-40-and-aspice-31">PRM (ASPICE 4.0 and ASPICE 3.1)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>ASPICE 4.0</strong></th>
+<th><strong>ASPICE 3.1</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="PRM 4.0" src="../data/PRM_4_0.png" /></td>
+<td><img alt="PRM 3.1" src="../data/PRM_3_1.png" /></td>
+</tr>
+</tbody>
+</table>
 <p>The <strong>Process Reference Model (PRM)</strong> organizes processes into groups based on the activities they address. These groups are further categorized into three <strong>process categories</strong>:</p>
 <ol>
 <li><strong>Primary Life Cycle Processes:</strong> Focus on core development and delivery activities.</li>
@@ -394,8 +408,66 @@ interfaces.</li>
 <li><strong>SWE.5.BP6:</strong> Ensure consistency and establish bidirectional traceability</li>
 <li><strong>SWE.5.BP7:</strong> Summarize and communicate results</li>
 </ul>
+<h4 id="swe5-outcomes">SWE.5 Outcomes</h4>
 <p><img alt="SWE5_outcomes" src="../data/SWE5_outcomes.png" /></p>
-<h3 id="software-verification">Software Verification</h3>
+<h4 id="swe5-aspice-31-vs-aspice-40-comparison">SWE.5 ASPICE 3.1 vs ASPICE 4.0 comparison</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Base Practice</strong></th>
+<th><strong>ASPICE 3.1</strong></th>
+<th><strong>ASPICE 4.0</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SWE.5.BP1</strong></td>
+<td>Develop software integration strategy.</td>
+<td>Specify software integration verification measures.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP2</strong></td>
+<td>Develop software integration test strategy, including regression test strategy.</td>
+<td>Specify verification measures for verifying software component behavior.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP3</strong></td>
+<td>Develop specification for software integration test.</td>
+<td>Select verification measures.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP4</strong></td>
+<td>Integrate software units and software items.</td>
+<td>Integrate software elements and perform integration verification.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP5</strong></td>
+<td>Select test cases.</td>
+<td>Perform software component verification.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP6</strong></td>
+<td>Perform software integration test.</td>
+<td>Ensure consistency and establish bidirectional traceability.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP7</strong></td>
+<td>Establish bidirectional traceability.</td>
+<td>Summarize and communicate results.</td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP8</strong></td>
+<td>Ensure consistency.</td>
+<td><em>Merged into BP6 for consistency and traceability.</em></td>
+</tr>
+<tr>
+<td><strong>SWE.5.BP9</strong></td>
+<td>Summarize and communicate results.</td>
+<td><em>Merged into BP7 for communication of results.</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="swe6-software-verification">SWE.6 Software Verification</h3>
 <h4 id="process-purpose_1">Process purpose</h4>
 <p>The purpose of the Software Verification process is to ensure that the integrated software is verified to be consistent with the software requirements.</p>
 <h4 id="process-outcomes_1">Process outcomes</h4>
@@ -414,13 +486,83 @@ interfaces.</li>
 <li><strong>SWE.6.BP4:</strong> Ensure consistency and establish bidirectional traceability</li>
 <li><strong>SWE.6.BP5:</strong> Summarize and communicate results</li>
 </ul>
+<h4 id="swe6-outcomes">SWE.6 Outcomes</h4>
 <p><img alt="SWE6_outcomes" src="../data/SWE6_outcomes.png" /></p>
+<h4 id="swe6-aspice-31-vs-aspice-40-comparison">SWE.6 ASPICE 3.1 vs ASPICE 4.0 comparison</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Base Practice</strong></th>
+<th><strong>ASPICE 3.1</strong></th>
+<th><strong>ASPICE 4.0</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SWE.6.BP1</strong></td>
+<td>Develop software qualification test strategy, including regression test strategy.</td>
+<td>Specify verification measures for software verification.</td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP2</strong></td>
+<td>Develop specification for software qualification test.</td>
+<td>Select verification measures.</td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP3</strong></td>
+<td>Select test cases.</td>
+<td>Verify the integrated software.</td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP4</strong></td>
+<td>Test integrated software.</td>
+<td>Ensure consistency and establish bidirectional traceability.</td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP5</strong></td>
+<td>Establish bidirectional traceability.</td>
+<td>Summarize and communicate results.</td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP6</strong></td>
+<td>Ensure consistency.</td>
+<td><em>Merged into BP4 for consistency and traceability.</em></td>
+</tr>
+<tr>
+<td><strong>SWE.6.BP7</strong></td>
+<td>Summarize and communicate results.</td>
+<td><em>Merged into BP5 for communication of results.</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="validation-process-group-val">Validation process group (VAL)</h3>
+<h4 id="process-purpose_2">Process purpose</h4>
+<p>The purpose is to provide evidence that the end product, allowing direct end user interaction,
+satisfies the intended use expectations in its operational target environment.</p>
+<h4 id="process-outcomes_2">Process outcomes</h4>
+<ol>
+<li>Validation measures are selected considering criteria for regression verification.</li>
+<li>The product is validated using the selected validation measures, and validation results are recorded.</li>
+<li>Consistency and unidirectional traceability are established between validation measures and stakeholder requirements.</li>
+<li>Bidirectional traceability is established between validation results and validation measures.</li>
+<li>Results of the validation are summarized and communicated to all affected parties.</li>
+</ol>
+<h4 id="base-practices_2">Base Practices</h4>
+<ul>
+<li><strong>VAL.1.BP1:</strong> Specify validation measures for product validation.</li>
+<li><strong>VAL.1.BP2:</strong> Select validation measures.</li>
+<li><strong>VAL.1.BP3:</strong> Perform validation and evaluate results.</li>
+<li><strong>VAL.1.BP4:</strong> Ensure consistency and establish bidirectional traceability.</li>
+<li><strong>VAL.1.BP5:</strong> Summarize and communicate results.</li>
+</ul>
+<h4 id="val1-outcomes">VAL.1 Outcomes</h4>
+<p><img alt="VAL1_outcomes" src="../data/VAL1_outcomes.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../../readme/" class="btn btn-neutral float-left" title="Basics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../SDLC/readme/" class="btn btn-neutral float-right" title="Readme">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../SDLC/readme/" class="btn btn-neutral float-right" title="Software Development Life Cycle (SDLC)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
