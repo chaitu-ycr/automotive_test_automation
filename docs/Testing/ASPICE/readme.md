@@ -1,6 +1,6 @@
 **NOTE**: All content here is AI generated and this notes prepared for study purpose. For detailed information visit [automotive-spice 🔗](https://vda-qmc.de/en/automotive-spice).
 
-My focus in this notebook is towards Testing Topics.
+My focus in this notebook is towards Testing Topics and used ASPICE 4.0 as reference.
 
 - [ASPICE 4.0 Basics and Reference Manual 🔗](https://vda-qmc.de/wp-content/uploads/2023/12/Automotive-SPICE-PAM-v40.pdf)
 - [ASPICE 4.0 Pocket Guide 🔗](https://www.ul.com/sites/default/files/2024-10/Automotive_Spice_Pocket_Guide.pdf)
@@ -30,7 +30,12 @@ The Measurement Framework aligns with ISO/IEC 33003:2015
 
 ## Process Reference Model (PRM)
 
-![PRM](data/PRM.png)
+### PRM (ASPICE 4.0 and ASPICE 3.1)
+
+| **ASPICE 4.0**                  | **ASPICE 3.1**                  |
+|---------------------------------|---------------------------------|
+| ![PRM 4.0](data/PRM_4_0.png)   | ![PRM 3.1](data/PRM_3_1.png)   |
+
 
 The **Process Reference Model (PRM)** organizes processes into groups based on the activities they address. These groups are further categorized into three **process categories**:
 
@@ -126,9 +131,26 @@ interfaces.
 - **SWE.5.BP6:** Ensure consistency and establish bidirectional traceability
 - **SWE.5.BP7:** Summarize and communicate results
 
+#### SWE.5 Outcomes
+
 ![SWE5_outcomes](data/SWE5_outcomes.png)
 
-### Software Verification
+#### SWE.5 ASPICE 3.1 vs ASPICE 4.0 comparison
+
+| **Base Practice**                     | **ASPICE 3.1**                                              | **ASPICE 4.0**                                              |
+|---------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| **SWE.5.BP1**                         | Develop software integration strategy.                      | Specify software integration verification measures.          |
+| **SWE.5.BP2**                         | Develop software integration test strategy, including regression test strategy. | Specify verification measures for verifying software component behavior. |
+| **SWE.5.BP3**                         | Develop specification for software integration test.        | Select verification measures.                               |
+| **SWE.5.BP4**                         | Integrate software units and software items.                | Integrate software elements and perform integration verification. |
+| **SWE.5.BP5**                         | Select test cases.                                          | Perform software component verification.                   |
+| **SWE.5.BP6**                         | Perform software integration test.                         | Ensure consistency and establish bidirectional traceability. |
+| **SWE.5.BP7**                         | Establish bidirectional traceability.                      | Summarize and communicate results.                         |
+| **SWE.5.BP8**                         | Ensure consistency.                                         | *Merged into BP6 for consistency and traceability.*         |
+| **SWE.5.BP9**                         | Summarize and communicate results.                         | *Merged into BP7 for communication of results.*             |
+
+
+### SWE.6 Software Verification
 
 #### Process purpose
 
@@ -150,4 +172,45 @@ The purpose of the Software Verification process is to ensure that the integrate
 - **SWE.6.BP4:** Ensure consistency and establish bidirectional traceability
 - **SWE.6.BP5:** Summarize and communicate results
 
+#### SWE.6 Outcomes
+
 ![SWE6_outcomes](data/SWE6_outcomes.png)
+
+#### SWE.6 ASPICE 3.1 vs ASPICE 4.0 comparison
+
+| **Base Practice**                     | **ASPICE 3.1**                                              | **ASPICE 4.0**                                              |
+|---------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| **SWE.6.BP1**                         | Develop software qualification test strategy, including regression test strategy. | Specify verification measures for software verification.    |
+| **SWE.6.BP2**                         | Develop specification for software qualification test.       | Select verification measures.                               |
+| **SWE.6.BP3**                         | Select test cases.                                          | Verify the integrated software.                            |
+| **SWE.6.BP4**                         | Test integrated software.                                   | Ensure consistency and establish bidirectional traceability. |
+| **SWE.6.BP5**                         | Establish bidirectional traceability.                      | Summarize and communicate results.                         |
+| **SWE.6.BP6**                         | Ensure consistency.                                         | *Merged into BP4 for consistency and traceability.*         |
+| **SWE.6.BP7**                         | Summarize and communicate results.                         | *Merged into BP5 for communication of results.*             |
+
+### Validation process group (VAL)
+
+#### Process purpose
+
+The purpose is to provide evidence that the end product, allowing direct end user interaction,
+satisfies the intended use expectations in its operational target environment.
+
+#### Process outcomes
+
+1. Validation measures are selected considering criteria for regression verification.
+2. The product is validated using the selected validation measures, and validation results are recorded.
+3. Consistency and unidirectional traceability are established between validation measures and stakeholder requirements.
+4. Bidirectional traceability is established between validation results and validation measures.
+5. Results of the validation are summarized and communicated to all affected parties.
+
+#### Base Practices
+
+- **VAL.1.BP1:** Specify validation measures for product validation.
+- **VAL.1.BP2:** Select validation measures.
+- **VAL.1.BP3:** Perform validation and evaluate results.
+- **VAL.1.BP4:** Ensure consistency and establish bidirectional traceability.
+- **VAL.1.BP5:** Summarize and communicate results.
+
+#### VAL.1 Outcomes
+
+![VAL1_outcomes](data/VAL1_outcomes.png)
